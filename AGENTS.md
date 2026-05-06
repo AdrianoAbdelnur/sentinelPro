@@ -142,3 +142,20 @@ Notes:
 - `npx tsc --noEmit`
 - `npm run build`
 - `npm run start`
+
+## Branch Discipline
+
+When changing work topic (feature/bugfix/chore area), switch to a branch that matches the new topic before making any commit.
+
+Mandatory flow:
+1. Check current branch status first.
+2. If there are pending local changes (not committed or not pushed), do not switch branch automatically.
+3. In that case, stop and ask the user how to proceed.
+4. Only switch branch when the current branch is clean (no pending commit/push work).
+5. Create a new branch or checkout an existing matching branch.
+6. Confirm branch name matches the new topic.
+7. Only then stage, commit, and push.
+
+Never keep committing unrelated topics to the same long-lived branch.
+Never change branch while there are pending changes unless the user explicitly approves the action.
+
